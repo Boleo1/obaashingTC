@@ -2,7 +2,6 @@
   <x-slot:heading>
     Contact
   </x-slot:heading>
-  <script> src={{url('resources/JS/googlemap.js')}}</script>
   <script async src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_API_KEY' )}}&callback=initMap">
   </script>
     <div class="contactInfo">
@@ -15,10 +14,11 @@
         <li><strong>Hours:</strong> Monday - Friday: 8:00AM - 5:00PM</li>
       </ul>
     </div>
-
+    
     <div class="contactMap" id="map">
       
     </div>
-
-
+    
+    
+    <script> src={{ asset('resources/JS/googlemap.js') }}</script>
   </x-layout>

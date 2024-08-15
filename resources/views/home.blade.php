@@ -40,4 +40,5 @@
       <a>Link to full detailed story.</a>
     </div>
   </div>
+  <script src="{{asset('resources/js/main.js')}}" defer></script>
 </x-layout>

@@ -26,18 +26,4 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-} 
-
-
-// Resizing Nav Bar //
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navHeader").style.padding = "20px 10px";
-    document.getElementById("logo").style.height = "80px";
-  } else {
-    document.getElementById("navHeader").style.padding = "20px 10px";
-    document.getElementById("logo").style.height = "120px";
-  }
 }
-
-window.onscroll = function() {scrollFunction()};
