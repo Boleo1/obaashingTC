@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="{{url('resources/css/app.css')}}">
+  <link rel="stylesheet" href="{{asset('resources/css/app.css')}}">
   <title>{{ $heading }}</title>
 </head>
 <body>
-  <header id="navHeader">
-    <a href="/"><img class="logo" id="logo" src="{{url('resources/images/mainlogo.png')}}" alt="logo"></a>
-    <div class="nav-container" id="navContainer">
+  <header>
+    <div id="navHeader">
+    <a href="/"><img class="logo" id="logo" src="{{asset('resources/images/obaashingTClogoText.png')}}" alt="logo"></a>
+    <div class="nav-buttons" id="nav-buttons">
       <nav class="topNavBar" id="topNav">
         <ul class="nav_links">
           <x-nav-link href="/about">About</x-nav-link>
@@ -19,6 +20,7 @@
         </ul>
       </nav>
       <a class="cta" href="resources"><button>Need Support?</button></a>
+    </div>
     </div>
   </header>
   <div class="container">
@@ -51,6 +53,6 @@
   <div class="copyright">
     <p>Copyright &copy;2024 Developed by: <a href="https://github.com/boleo1">Anthony Beaulieu</a></p>
   </div>
-  <script src="{{url('resources/js/main.js')}}"></script>
+  <script src="{{asset('resources/js/main.js')}}" defer></script>
 </body>
 </html>

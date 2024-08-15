@@ -16,16 +16,7 @@ body {
 
 .main{
   min-height: 100vh;
-}
-
-header {
-  border: solid 2px orange;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 5%;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  padding-top: 120px;
 }
 
 /*=====================================================
@@ -37,17 +28,25 @@ Navigation Bar styling
   width: auto;
   cursor: pointer;
   transition: height 0.3s ease;
-  border: solid 2px purple;
 }
 
-.nav-container {
+.nav-buttons {
   overflow: hidden;
   display: flex;
   align-items: center;
 }
 
 #navHeader {
-  padding: 40px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  z-index: 999;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  padding: 20px 10px;
   transition: padding 0.3s ease, height 0.3s ease;
   background-color: #fff;
 }
@@ -75,12 +74,12 @@ Navigation Bar styling
 }
 
 .nav_links li a:hover {
-  color: #006609;
+  color: #033f01;
 }
 
 .cta button {
   padding: 10px 20px;
-  background-color: rgba(0, 102, 9, 1);
+  background-color: rgba(3, 63, 1, 1);
   color: #fff;
   border: none;
   border-radius: 50px;
@@ -93,29 +92,6 @@ Navigation Bar styling
 .cta button:hover {
   background-color: rgba(0, 136, 0, 0.8);
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
-
-.sticky + .main {
-  padding-top: 120px;
-}
-
-
-.sticky .logo {
-  height: 80px;
-}
-
-.sticky #navHeader {
-  padding: 20px 10px;
-}
-
 
 /*=======================================================
   Footer styling
